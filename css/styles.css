@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(80, 80, 80);
+  color: rgb(238, 238, 238);
+  font-size: 16px;
+}
+
+nav[id="navbar"] {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 2rem;
+  background-color: rgb(24, 111, 186);
+}
+
+ul[id="nav-list"] {
+  display: flex;
+  flex-direction: row;
+  float: inline-end;
+  justify-content: space-evenly;
+}
+
+#nav-list * {
+  list-style-type: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 1rem;
+}
+
+a {
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+}
+
+a:hover,
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#welcome-section {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(55, 55, 55);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-tile {
+  display: flex;
+  width: 40%;
+  background-color: rgb(24, 111, 186);
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 2rem;
+}
+
+.project-title {
+  line-height: 2.5rem;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+#contact {
+  background-color: rgb(55, 55, 55);
+  text-align: right;
+}
+
+@media only screen and (max-width: 720px) {
+  #projects {
+    .project-tile {
+      width: 80%;
+    }
+  }
+}
